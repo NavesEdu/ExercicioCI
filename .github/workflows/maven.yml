@@ -26,6 +26,7 @@ jobs:
     - name: Testes com maven
       run: |
         cd ExercicioCI
+        mvn clean install
         mvn clean test site
     - name: Upload artefatos de teste
       uses: actions/upload-artifact@v3
