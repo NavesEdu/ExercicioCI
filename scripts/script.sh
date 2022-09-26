@@ -1,5 +1,5 @@
 ls
-cd ExercicioCI
+cd src
 echo "Instalar mailutils"
 sudo apt-get install mailutils
 
