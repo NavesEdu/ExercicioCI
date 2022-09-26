@@ -1,5 +1,5 @@
 ls
-cd ExercicioCI/src
+cd ExercicioCI
 echo "Mailutils"
 sudo apt-get install mailutils
 echo "Instalação completa"
