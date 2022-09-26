@@ -1,4 +1,5 @@
 ls
+pwd
 cd ExercicioCI
 echo "Mailutils"
 sudo apt-get install mailutils
