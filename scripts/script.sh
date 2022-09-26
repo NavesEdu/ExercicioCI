@@ -1,8 +1,10 @@
 ls
-cd src
-echo "Instalar mailutils"
+cd ExercicioCI/src
+echo "Mailutils"
 sudo apt-get install mailutils
+echo "Instalação completa"
 
 Email = $Email
 
-echo "Mandando e-mail com o mail do linux" | mail -s "subject: CI" "$Email"
+echo $Email
+echo "Pipeline executado" | mail -s "subject: Atividade CI" "$Email"
