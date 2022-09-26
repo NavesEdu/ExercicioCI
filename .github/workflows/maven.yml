@@ -58,3 +58,13 @@ jobs:
           name: arquivo-jar
           path: ExercicioCI/target/*.jar
 
+  scripts:
+    runs-on: ubuntu-latest
+    
+    env:
+      Email: "eduardo.naves@ges.inatel.br"
+    
+    steps:
+    - name: Executar script 
+      uses: actions/checkout@v3
+    - run: sh scripts/script.sh
