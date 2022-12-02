@@ -10,9 +10,8 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh '''
-                    cd jenkins-docker-s107
-                    npm install
-                    node_modules/.bin/ng build
+                    cd ExercicioCI
+                    mvn clean install
                    '''
             }
         }
@@ -20,10 +19,10 @@ pipeline {
             steps {
                 echo 'Testing..'
                 sh '''
-                    cd jenkins-docker-s107
-                    node_modules/.bin/ng test                   
+                    cd ExercicioCI
+                    mvn clean test site                  
                    '''
-                  // archiveArtifacts 'Aula-GitHub-Actions/target/site/' 
+                  // archiveArtifacts 'ExercicioCI/target/site/' 
             }
         }
         stage('Notification') {
